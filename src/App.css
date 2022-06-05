@@ -141,7 +141,7 @@ body{
   .register {
     width: 60%;
   };
-  .wrap{
+  #searchBar{
     display: none;
   };
 }
