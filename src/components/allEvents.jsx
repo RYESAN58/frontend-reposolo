@@ -62,25 +62,8 @@ const All = () => {
                   <Button onClick={()=> {
                     navigate(`/details/${event._id}`)
                   }}>Event Album</Button>
-                  {
-                    event.user_id._id === idFromUser ?
-                    <Button variant="default" onClick={()=> {
-                      navigate(`/edit/${event._id}`)
-                    }}>
-                      Edit
-                    </Button>:
-                    ''
-                  }
-                  {
-                    event.user_id._id === idFromUser ?
-                    <Button variant="danger" style={{margin: "5px"}} onClick={(e) => {
-                      let x = window.confirm('are you sure You Want to delete?')
-                      if (x){
-                        deleteEvent(event._id)
-                      }
-                    }}>Delete</Button>:
-                    ""
-                  }
+                  
+                  
                 </div>
                 <div style={{display: "flex", justifyContent:"space-around", borderTop:"gray 2px solid"}}>
                   {
