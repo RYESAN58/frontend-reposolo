@@ -91,6 +91,7 @@ const AddEvent = () => {
     setErrors({})
     setAuthError("")
     console.log(newEvent)
+    console.log("GETS HERE")
     navigate('/getall')
   })
   .catch((err)=> {
