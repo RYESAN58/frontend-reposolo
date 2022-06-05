@@ -76,7 +76,7 @@ const All = () => {
                     event.user_id._id === idFromUser ?
                     <Button variant="danger" style={{margin: "5px"}} onClick= {(e) => {
                       console.log("YOOOOO")
-                      let x = window.confirm('are you sure You Want to delete?')
+                      let x = window.confirm('Are you sure you want to delete?')
                       if (x){
                         deleteEvent(event._id)
                       }
