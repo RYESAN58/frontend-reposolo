@@ -137,11 +137,11 @@ body{
   background-color: rgb(213, 213, 213);
 } */
 
-@media all and (max-width: 428px){
+@media all and (max-width: 600px){
   .register {
     width: 60%;
   };
-  .search{
+  .wrap{
     display: none;
   };
 }
