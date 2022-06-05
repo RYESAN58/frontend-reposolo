@@ -24,6 +24,7 @@ const AddPhoto = () => {
 
   const handleFile = (e)=> {
     setPic(e.target.files[0])
+    setId(localStorage.getItem('id'))
     console.log(image)
   }
 
@@ -35,9 +36,7 @@ const AddPhoto = () => {
     e.preventDefault()
     setId(localStorage.getItem('id'))
     axios
-    .post(`https://photocred.herokuapp.com/api/poster/${id}` , formData, {
-    withCredentials: true,
-  })
+    .post(`https://photocred.herokuapp.com/api/poster/${id}` , formData)
     .then((newEvent) => {
       console.log(newEvent)
       navigate(`/details/${id}`)
