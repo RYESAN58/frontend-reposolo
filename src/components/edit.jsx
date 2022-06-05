@@ -141,7 +141,7 @@ const Edit = () => {
               </td>
               <td>
                 <Button variant="danger" onClick={() => {
-                      axios.delete(`https://photocred.herokuapp.com/api/delete/post/${post._id}` || `http://localhost:8000/api/delete/post/${post._id}`)
+                      axios.delete(`https://photocred.herokuapp.com/api/delete/post/${post._id}`)
                       .then(res => {
                         console.log(res)
                     })

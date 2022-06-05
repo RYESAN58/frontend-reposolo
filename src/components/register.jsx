@@ -37,7 +37,7 @@ const Register = (props) => {
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    axios.post("https://photocred.herokuapp.com/api/register" ||  "http://localhost:8000/api/register", {
+    axios.post("https://photocred.herokuapp.com/api/register", {
       FirstName,
       LastName,
       email,
